@@ -61,3 +61,119 @@
         scroll-behavior: auto !important;
     }
 }
+
+/* Pricing page */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 50px auto;
+    align-items: stretch;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px 25px;
+    border: 2px solid #dddddd;
+    border-radius: 15px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+.pricing-card h2 {
+    color: #0b132a;
+    margin-bottom: 15px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin: 25px 0;
+    padding: 0;
+    text-align: left;
+}
+
+.pricing-card li {
+    margin-bottom: 15px;
+}
+
+.pricing-card li::before {
+    content: "✓ ";
+    color: #2fab73;
+    font-weight: bold;
+}
+
+.pricing-card p strong {
+    font-size: 1.8rem;
+    color: #0b132a;
+}
+
+.pricing-card .btn {
+    margin-top: auto;
+}
+
+/* Responsive pricing layout */
+@media (max-width: 900px) {
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* About page */
+#main-content > .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#main-content h1 {
+    color: #0b132a;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#main-content h2 {
+    color: #0b132a;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+#main-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #4f5665;
+}
+
+#main-content ul {
+    padding-left: 25px;
+    margin-bottom: 30px;
+}
+
+#main-content li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Mobile layout for About page */
+@media (max-width: 600px) {
+    #main-content h1 {
+        font-size: 2rem;
+    }
+
+    #main-content > .container {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+}
