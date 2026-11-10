@@ -543,3 +543,39 @@ button:focus-visible {
     gap: 20px;
   }
 }
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-content {
+  width: 50%;
+  order: 1;
+}
+
+.hero-image {
+  width: 50%;
+  order: 2;
+  display: block;
+}
+
+.hero-image picture,
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero-content,
+  .hero-image {
+    width: 100%;
+  }
+}
