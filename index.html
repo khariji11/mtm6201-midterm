@@ -58,16 +58,19 @@
       </div>
 
       <div class="hero-image">
-        <img
-          src="images/hero-small.png"
-          srcset="images/hero-small.png 600w,
-                  images/hero-large.png 1223w"
-          sizes="(max-width: 600px) 100vw, 600px"
-          width="600"
-          height="375"
-          alt="Illustration of a person using a laptop and a secure VPN"
-          fetchpriority="high">
-      </div>
+  <picture>
+    <source
+      media="(max-width: 600px)"
+      srcset="images/hero-small.png"
+    >
+    <img
+      src="images/hero-large.png"
+      alt="Person using a laptop"
+      width="600"
+      height="375"
+    >
+  </picture>
+</div>
     </section>
 
     <!-- Website statistics -->
