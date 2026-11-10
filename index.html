@@ -1,122 +1,153 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover LaslesVPN, a secure and simple VPN service.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LaslesVPN offers secure, fast and private internet access.">
+  <title>LaslesVPN | Home</title>
+  <link rel="stylesheet" href="css/style.css">
 
-    <title>LaslesVPN | Home</title>
-
-    <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "LaslesVPN",
+    "description": "A secure and reliable VPN service."
+  }
+  </script>
 </head>
 
 <body>
+  <!-- Accessibility skip link -->
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <!-- Skip link for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- Main navigation -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span aria-hidden="true">🔴</span>
+        Lasles<strong>VPN</strong>
+      </a>
 
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container">
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
 
-            <a href="index.html" class="logo">
-                <span>Lasles</span>VPN
-            </a>
+      <div class="auth-links">
+        <a href="pricing.html">Sign In</a>
+        <a class="btn-outline" href="pricing.html">Sign Up</a>
+      </div>
+    </div>
+  </header>
 
-            <nav aria-label="Main navigation">
-                <ul class="nav-links">
-                    <li><a href="index.html" aria-current="page">Home</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
+  <main id="main">
 
-            <div class="nav-buttons">
-                <a href="#" class="login-link">Sign In</a>
-                <a href="#" class="signup-button">Sign Up</a>
-            </div>
+    <!-- Hero section -->
+    <section class="hero container">
+      <div class="hero-content">
+        <h1>Want anything to be easy with <strong>LaslesVPN.</strong></h1>
+        <p>
+          Enjoy a secure, fast and private internet connection
+          wherever you go with LaslesVPN.
+        </p>
+        <a class="btn" href="pricing.html">Get Started</a>
+      </div>
 
-        </div>
-    </header>
+      <div class="hero-image">
+        <img
+          src="images/hero-small.png"
+          srcset="images/hero-small.png 600w,
+                  images/hero-large.png 1223w"
+          sizes="(max-width: 600px) 100vw, 600px"
+          width="600"
+          height="375"
+          alt="Illustration of a person using a laptop and a secure VPN"
+          fetchpriority="high">
+      </div>
+    </section>
 
-    <!-- Main content -->
-    <main id="main-content">
+    <!-- Website statistics -->
+    <section class="stats container" aria-label="Our statistics">
+      <div class="stat">
+        <span aria-hidden="true">👤</span>
+        <h2>90+</h2>
+        <p>Users</p>
+      </div>
 
-        <!-- Hero section -->
-        <section class="hero container">
+      <div class="stat">
+        <span aria-hidden="true">📍</span>
+        <h2>30+</h2>
+        <p>Locations</p>
+      </div>
 
-            <div class="hero-content">
-                <h1>Want anything to be easy with <strong>LaslesVPN.</strong></h1>
+      <div class="stat">
+        <span aria-hidden="true">🖥️</span>
+        <h2>50+</h2>
+        <p>Servers</p>
+      </div>
+    </section>
 
-                <p>
-                    Enjoy a secure, fast and private internet connection
-                    wherever you go with LaslesVPN.
-                </p>
+    <!-- Features -->
+    <section class="features container">
+      <div class="features-content">
+        <h2>We Provide Many Features You Can Use</h2>
+        <p>
+          Protect your online privacy and enjoy a better
+          internet experience with our VPN service.
+        </p>
 
-                <a href="pricing.html" class="primary-button">
-                    Get Started
-                </a>
-            </div>
+        <ul>
+          <li>Secure internet connection</li>
+          <li>High-speed browsing</li>
+          <li>Privacy protection</li>
+          <li>Access from anywhere</li>
+        </ul>
+      </div>
+    </section>
 
-            <div class="hero-image">
-                <img
-                    src="images/hero-large.webp"
-                    alt="Illustration of a person using a secure internet connection"
-                >
-            </div>
+    <!-- Benefits -->
+    <section class="values container">
+      <h2>Why Choose LaslesVPN?</h2>
 
-        </section>
+      <div class="value-grid">
+        <article class="value-card">
+          <span aria-hidden="true">🔒</span>
+          <h3>Security</h3>
+          <p>We protect your online privacy and personal information.</p>
+        </article>
 
-        <!-- Statistics -->
-        <section class="statistics container">
+        <article class="value-card">
+          <span aria-hidden="true">⚡</span>
+          <h3>Speed</h3>
+          <p>Enjoy a smooth and reliable internet connection.</p>
+        </article>
 
-            <div class="stat-item">
-                <h2>90+</h2>
-                <p>Users</p>
-            </div>
+        <article class="value-card">
+          <span aria-hidden="true">🌐</span>
+          <h3>Worldwide</h3>
+          <p>Stay connected wherever life takes you.</p>
+        </article>
+      </div>
+    </section>
 
-            <div class="stat-item">
-                <h2>30+</h2>
-                <p>Locations</p>
-            </div>
+    <!-- Call to action -->
+    <section class="cta container">
+      <h2>Get Started with LaslesVPN</h2>
+      <p>Choose a plan that works best for you.</p>
+      <a class="btn" href="pricing.html">View Plans</a>
+    </section>
 
-            <div class="stat-item">
-                <h2>50+</h2>
-                <p>Servers</p>
-            </div>
+  </main>
 
-        </section>
-
-        <!-- Features -->
-        <section class="features container">
-
-            <div class="features-content">
-                <h2>We Provide Many Features You Can Use</h2>
-
-                <p>
-                    Protect your online privacy and enjoy a better
-                    internet experience with our VPN service.
-                </p>
-
-                <ul>
-                    <li>Secure internet connection</li>
-                    <li>High-speed browsing</li>
-                    <li>Privacy protection</li>
-                    <li>Access from anywhere</li>
-                </ul>
-            </div>
-
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 LaslesVPN. All rights reserved.</p>
-        </div>
-    </footer>
-
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 LaslesVPN. All rights reserved.</p>
+      <p>Original design by Didi Kurniawan.</p>
+    </div>
+  </footer>
 </body>
 </html>
