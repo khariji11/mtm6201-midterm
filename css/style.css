@@ -579,3 +579,48 @@ button:focus-visible {
     width: 100%;
   }
 }
+.hero {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  align-items: center !important;
+  gap: 30px !important;
+}
+
+.hero-content {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+}
+
+.hero-image {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 100% !important;
+}
+
+.hero-image picture,
+.hero-image img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-image {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  .hero-content {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+  }
+}
